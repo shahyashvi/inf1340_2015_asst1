@@ -16,29 +16,20 @@ __license__ = "MIT License"
 money = 1000.00
 print(money)
 
-print("Lakshmi bought 2000 shares for $900 per share")
-print("2000 shares * $900 per share =", 2000*900)
-print("$1800000 was the total amount paid for the stock")
 
-print("Lakshmi had to pay the 3% commission to the stockbroker")
-print("$1800000 share purchase * 0.03 percent for stockbroker =", 1800000*0.03)
-print("$54000 was the 3% commission paid to the stockbroker")
 
-print("2 weeks later, Lakshmi sold 2000 shares for $942.75 per share")
-print("$1800000 stock purchase + $54000 owed to stockbroker=", 1800000+54000)
-print("$1854000 was the total stock purchase")
+number_shares_bought = 2000
+shares_purchase_price = 900
+stock_purchase_price = (number_shares_bought*shares_purchase_price)
+commission_bought = (stock_purchase_price*0.03)
+total_stock_purchase_price = (stock_purchase_price+commission_bought)
 
-print("2 weeks later, Lakshmi sold 2000 shares for $942.75 per share")
-print("2000 shares * $942.75 per share =", 2000*942.75)
-print("$1885500.00 was the total amount sold for the stock")
+number_shares_sold = 2000
+shares_sold_price = 942.75
+stock_sold_price = (number_shares_sold*shares_sold_price)
+commission_sold = (stock_sold_price*0.03)
+total_stock_sold_price = (stock_sold_price-commission_sold)
 
-print("Lakshmi had to pay the 3% commission to the stockbroker")
-print("$1885500.00 share purchase * 0.03 percent for stockbroker =", 1885500*0.03)
-print("$56565.00 was the 3% commission paid to the stockbroker")
+Profit = (total_stock_sold_price-total_stock_purchase_price)
+print("Lakshmi has " + str(Profit) + "dollars left.")
 
-print("$1885500.00 stock sell - $56565.00 owed to stockbroker =", 1885500.00-56565.00)
-print("$1828935.00 was the amount Lakshmi made from the stock sold")
-
-print("$1828935.00 total amount for stock sold -$1854000.00 total amount for stock bought  =", 1828935-1854000)
-
-print("Lakshmi lost $25065.00 from the stock transaction")
