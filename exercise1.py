@@ -13,11 +13,6 @@ __copyright__ = "2015 Susan Sim"
 __license__ = "MIT License"
 
 
-money = 1000.00
-print(money)
-
-
-
 number_shares_bought = 2000
 shares_purchase_price = 900
 stock_purchase_price = (number_shares_bought*shares_purchase_price)
