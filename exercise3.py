@@ -62,4 +62,5 @@ elif silent_car == "no":
         print ("Please enter either yes or no.")
 else:
     print ("Please enter either yes or no.")
+
 diagnose_car()
