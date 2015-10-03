@@ -18,11 +18,20 @@ def name_that_shape():
     For a given number of sides in a regular polygon, returns the shape name
 
     Inputs:
-
+    number_sides = 4
+    number_sides = 2
+    number_sides = 11
 
     Expected Outputs:
+    This is a quadrilateral
+    Error
+    Error
 
     Errors:
+    0
+    0
+    0
+
 
     """
     number_sides = raw_input('How many sides does your shape have? Please enter a number between 3 and 10. ')
