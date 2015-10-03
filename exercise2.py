@@ -24,8 +24,8 @@ def name_that_shape():
 
     Expected Outputs:
     This is a quadrilateral.
-    Error
-    Error
+    Error.
+    Error.
 
     Errors:
     0
