@@ -18,6 +18,7 @@ def diagnose_car():
     Interactively queries the user with yes/no questions to identify a
     possible issue with a car.
 
+
     Inputs: yes and no questions
     Yes (Is the car silent when you turn the key?)
         Yes (Are the battery terminals corroded?)
@@ -86,6 +87,8 @@ def diagnose_car():
     0
 
     """
+
+
 silent_car = raw_input('Is the car silent when you turn the key?')
 if silent_car == "yes":
     terminals_corroded = raw_input('Are the battery terminals corroded?')
