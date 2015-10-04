@@ -19,10 +19,71 @@ def diagnose_car():
     possible issue with a car.
 
     Inputs: yes and no questions
+    Yes (Is the car silent when you turn the key?)
+        Yes (Are the battery terminals corroded?)
+        or No (Are the battery terminals corroded?)
+        Neither yes or no (Are the battery terminals corroded?)
+
+    No (Is the car silent when you turn the key?)
+        Yes (Does the car make a clicking noise?)
+        No (Does the car make a clicking noise?)
+        Neither yes or no (Does the car make a clicking noise?)
+            Yes (Does the car crank up but fail to start?)
+            No (Does the car crank up but fail to start?)
+            Neither yes or no (Does the car crank up but fail to start?)
+                Yes (Does the engine start and then die?)
+                No (Does the engine start and then die?)
+                Neither yes or no (Does the engine start and then die?)
+                    Yes (Does your car have fuel injection?)
+                    No (Does your car have fuel injection?)
+                    Neither yes or no (Does your car have fuel injection?)
+
+    Neither yes or no (Is the car silent when you turn the key?)
+
 
     Expected Outputs: more questions or solutions
+    Are the battery terminals corroded?
+        Please clean terminals and try again.
+        The battery cables may be damaged. Replace cables and try again.
+        Please enter either yes or no.
+
+    Does the car make a clicking noise?
+        Replace the battery.
+        Does the car crank up but fail to start?
+        Please enter either yes or no.
+            Check spark plug connections.
+            Does the engine start and then die?
+            Please enter either yes or no.
+                Does your car have fuel injection?
+                Engine is not getting enough fuel. Clean fuel pump. (YASHVI: this line is not found in the A1 instructions sheet)
+                Please enter either yes or no.
+                    Get it in for service.
+                    Check to ensure the choke is opening and closing.
+                    Please enter either yes or no.
+
+    Please enter either yes or no.
+
 
     Errors: if something else is inserted other than yes or no, send error message
+    0
+        0
+        0
+
+    0
+        0
+        0
+        0
+            0
+            0
+            0
+                0
+                0
+                0
+                    0
+                    0
+                    0
+
+    0
 
     """
 silent_car = raw_input('Is the car silent when you turn the key?')
@@ -49,7 +110,7 @@ elif silent_car == "no":
                 if fuel_injection == "yes":
                     print("Get it in for service.")
                 elif fuel_injection == "no":
-                    print("Check to ensure the chock is opening and closing.")
+                    print("Check to ensure the choke is opening and closing.")
                 else:
                     print ("Please enter either yes or no.")
             elif engine_die == "no":
