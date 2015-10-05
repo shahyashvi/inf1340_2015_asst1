@@ -28,9 +28,9 @@ def name_that_shape():
     Error.
 
     Errors:
-    0
-    0
-    0
+    No error
+    Error
+    Error
 
 
     """
