@@ -21,9 +21,9 @@ def diagnose_car():
 
     Inputs: Y and N questions
     Y (Is the car silent when you turn the key?)
-        Yes (Are the battery terminals corroded?)
-        or No (Are the battery terminals corroded?)
-        Neither yes or no (Are the battery terminals corroded?)
+        Y (Are the battery terminals corroded?)
+        or N (Are the battery terminals corroded?)
+        Neither Y or N (Are the battery terminals corroded?)
 
     N (Is the car silent when you turn the key?)
         Y (Does the car make a clicking noise?)
