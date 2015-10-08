@@ -86,7 +86,7 @@ def diagnose_car():
 
     0
 #SHOULD WE JUST WRITE an error statemnt here
-#Please enter either yes or no for every line?
+#DO you mean the error statement, "Please enter either yes or no" for every line?
     """
 
 
