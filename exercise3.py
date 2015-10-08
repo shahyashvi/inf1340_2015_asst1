@@ -15,80 +15,32 @@ __license__ = "MIT License"
 
 def diagnose_car():
     """
-    Interactively queries the user with yes/no questions to identify a
-    possible issue with a car.
+    ***TEST CASES***
+    Inputs
+    Outputs
 
-
-    Inputs: yes and no questions
     Y, Y
     Clean terminals and try starting again.
+
     Y, N
     Replace cables and try again.
-    Y, N,
 
-    No (Is the car silent when you turn the key?)
-        Yes (Does the car make a clicking noise?)
-        No (Does the car make a clicking noise?)
-        Neither yes or no (Does the car make a clicking noise?)
-            Yes (Does the car crank up but fail to start?)
-            No (Does the car crank up but fail to start?)
-            Neither yes or no (Does the car crank up but fail to start?)
-                Yes (Does the engine start and then die?)
-                No (Does the engine start and then die?)
-                Neither yes or no (Does the engine start and then die?)
-                    Yes (Does your car have fuel injection?)
-                    No (Does your car have fuel injection?)
-                    Neither yes or no (Does your car have fuel injection?)
+    N, Y
+    Replace the battery.
 
-    Neither yes or no (Is the car silent when you turn the key?)
+    N, N, Y
+    Check spark plug connections.
 
+    N, N, N, N
+    Engine is not getting enough fuel. Clean fuel pump.
 
-    Expected Outputs: more questions or solutions
-    Are the battery terminals corroded?
-        Please clean terminals and try again.
-        The battery cables may be damaged. Replace cables and try again.
-        Please enter either yes or no.
+    N, N, N, Y, N
+    Check to ensure the choke is opening and closing.
 
-    Does the car make a clicking noise?
-        Replace the battery.
-        Does the car crank up but fail to start?
-        Please enter either yes or no.
-            Check spark plug connections.
-            Does the engine start and then die?
-            Please enter either yes or no.
-                Does your car have fuel injection?
-                Engine is not getting enough fuel. Clean fuel pump. (YASHVI: this line is not found in the A1 instructions sheet)
-                Please enter either yes or no.
-                    Get it in for service.
-                    Check to ensure the choke is opening and closing.
-                    Please enter either yes or no.
+    N, N, N, Y, Y
+    Get it in for service.
 
-    Please enter either yes or no.
-
-
-    Errors: if something else is inserted other than yes or no, send error message
-    0
-        0
-        0
-
-    0
-        0
-        0
-        0
-            0
-            0
-            0
-                0
-                0
-                0
-                    0
-                    0
-                    0
-
-    0
-#SHOULD WE JUST WRITE an error statemnt here
     """
-
 
     silent_car = raw_input('Is the car silent when you turn the key?')
     if silent_car == "Y":
@@ -128,4 +80,4 @@ def diagnose_car():
     else:
         print ("Enter Y or N.")
 
-#diagnose_car()
+diagnose_car()
