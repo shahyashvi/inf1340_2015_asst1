@@ -90,33 +90,33 @@ def diagnose_car():
 
 
 silent_car = raw_input('Is the car silent when you turn the key?')
-if silent_car == "yes":
+if silent_car == "Y":
     terminals_corroded = raw_input('Are the battery terminals corroded?')
-    if terminals_corroded == "yes":
+    if terminals_corroded == "Y":
         print "Please clean terminals and try starting again."
-    elif terminals_corroded == "no":
+    elif terminals_corroded == "N":
         print("The battery cables may be damaged. Replace cables and try again.")
     else:
         print ("Please enter either yes or no.")
-elif silent_car == "no":
+elif silent_car == "N":
     clicking_noise = raw_input('Does the car make a clicking noise?')
-    if clicking_noise == "yes":
+    if clicking_noise == "Y":
         print("Replace the battery.")
-    elif clicking_noise == "no":
+    elif clicking_noise == "N":
         crank_up = raw_input('Does the car crank up but fail to start?')
-        if crank_up == "yes":
+        if crank_up == "Y":
             print("Check spark plug connections.")
-        elif crank_up == "no":
+        elif crank_up == "N":
             engine_die = raw_input('Does the engine start and then die?')
-            if engine_die == "yes":
+            if engine_die == "Y":
                 fuel_injection = raw_input("Does your car have fuel injection?")
-                if fuel_injection == "yes":
+                if fuel_injection == "N":
                     print("Get it in for service.")
-                elif fuel_injection == "no":
+                elif fuel_injection == "N":
                     print("Check to ensure the choke is opening and closing.")
                 else:
                     print ("Please enter either yes or no.")
-            elif engine_die == "no":
+            elif engine_die == "N":
                 print("Engine is not getting enough fuel. Clean fuel pump.")
             else:
                 print ("Please enter either yes or no.")

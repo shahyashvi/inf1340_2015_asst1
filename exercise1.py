@@ -7,6 +7,8 @@ after the stock transactions
 
 """
 
+#ONE TEST CASE
+
 __author__ = 'Susan Sim'
 __email__ = "ses@drsusansim.org"
 __copyright__ = "2015 Susan Sim"
