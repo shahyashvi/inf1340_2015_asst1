@@ -36,23 +36,23 @@ def name_that_shape():
     """
     number_sides = raw_input('How many sides does your shape have? Please enter a number between 3 and 10. ')
     if number_sides == "3":
-            print "This is a triangle."
+            print "triangle"
     elif number_sides == "4":
-            print "This is a quadrilateral."
+            print "quadrilateral"
     elif number_sides == "5":
-            print "This is a pentagon."
+            print "pentagon"
     elif number_sides == "6":
-            print "This is a hexagon."
+            print "hexagon"
     elif number_sides == "7":
-            print "This is a heptagon."
+            print "heptagon"
     elif number_sides == "8":
-            print "This is an octagon."
+            print "octagon"
     elif number_sides == "9":
-            print "This is a nonagon."
+            print "nonagon"
     elif number_sides == "10":
-            print "This is a decagon."
+            print "decagon"
     else:
         print("Error")
 
 
-name_that_shape()
+#name_that_shape()
