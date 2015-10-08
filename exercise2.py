@@ -23,9 +23,9 @@ def name_that_shape():
     number_sides = 11
 
     Expected Outputs:
-    quadrilateral.
-    Error.
-    Error.
+    quadrilateral
+    Error
+    Error
 
     Errors:
     No error
