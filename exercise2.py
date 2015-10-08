@@ -23,7 +23,7 @@ def name_that_shape():
     number_sides = 11
 
     Expected Outputs:
-    This is a quadrilateral.
+    quadrilateral.
     Error.
     Error.
 
