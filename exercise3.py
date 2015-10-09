@@ -69,8 +69,10 @@ def diagnose_car():
                         print("Check to ensure the choke is opening and closing.")
                     else:
                         print ("Enter Y or N.")
+                #taken from announcement on Blackboard - NOT originally in A1
                 elif engine_die == "N":
                     print("Engine is not getting enough fuel. Clean fuel pump.")
+                #illegal inputs should lead to errors
                 else:
                     print ("Enter Y or N.")
             else:
@@ -80,4 +82,4 @@ def diagnose_car():
     else:
         print ("Enter Y or N.")
 
-diagnose_car()
+#diagnose_car()

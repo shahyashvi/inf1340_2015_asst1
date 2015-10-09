@@ -21,11 +21,13 @@ def name_that_shape():
     number_sides = 4
     number_sides = 2
     number_sides = 11
+    number_sides = 8
 
     Expected Outputs:
-    quadrilateral
-    Error
-    Error
+    quadrilateral.
+    Error.
+    Error.
+    octagon.
 
     Errors:
     No error
